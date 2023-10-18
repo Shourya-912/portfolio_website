@@ -6,28 +6,263 @@
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <title>portfolio</title>
         <link rel = "stylesheet" href = "style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     </head>
     <body>
         <div class = "banner">
             <div class="navbar">
                 <img src="logo.png" class ="logo">
                 <ul>
-                    <li><a href = "#home"> Home </a></li>
-                    <li><a href = "#"> About </a></li>
-                    <li><a href = "#"> Services </a></li>
-                    <li><a href = "#"> Skills </a></li>
-                    <li><a href = "#"> Project </a></li>
-                    <li><a href = "#"> Contact </a></li>
+                    <li><a href = "#" style="--i:1"> Home </a></li>
+                    <li><a href = "#about" style="--i:2"> About </a></li>
+                    <li><a href = "#services" style="--i:3"> Services </a></li>
+                    <li><a href = "#Myskills" style="--i:4"> Skills </a></li>
+                    <li><a href = "#project" style="--i:5"> Project </a></li>
+                    <li><a href = "#contact" style="--i:6"> Contact </a></li>
                 </ul>    
             </div>
             <div class = "content">
                 <h3>Hello,  It's Me</h3>
                 <h2>Shourya</h2>
-                <h3>I am a Web Developer</h3>
+                <h3>I am a <span class="text"></span></h3>
+                <p>A Developer Intern & Pursuing B-tech from Computer science, </br>from Oriental Institute od Science and Technology, Bhopal.</p>
+                <div class="home-sci">
+                    <a href="#" style="--i:8"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com/its_shourya09/?hl=en" target="_blank" style="--i:9"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.linkedin.com/in/shourya-chourasia-1b428622b/" target="_blank" style="--i:10"><i class='bx bxl-linkedin'></i></a>
+                </div>
                 <div class="button-container">
+                    <a href="#about">
                     <button type="button"><span></span>More About Me</button>
+                    </a>
                 </div>
             </div>
+            <span class="home-imghover"></span>
         </div>
+
+
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="pic.png" alt="Your Image">
+            </div>
+            <div class="about-text">
+                <h2>About <span>Me</span></h2>
+                <h4>Web Developer!</h4>
+                <p>Passionate and Adaptable aspiring programmer who is eager to start a </br>fulfilling career in the world of
+                    software development. I am excited about </br>the opportunity to bring my enthusiasm, creativity, and fresh
+                    perspectives to contribute to the success of projects and the growth of the organization. </p>
+                <div class="new-button">
+                    <a href="/resume1.pdf" download="shourya_resume">
+                        <button type="button"><span></span>Download Resume</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="container">
+                <h1 class="sub-title">My <span>Services</span></h1>
+                <div class="services-list">
+                    <div>
+                        <i class="bx bx-crop" style='color: #ff014f'></i>
+                        <h2>Web Development</h2>
+                        <p>website development, refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It may also include web design, web programming, and database management.</p>
+                        <a href="https://www.geeksforgeeks.org/web-development/" target="_blank">
+                            <button type="button"><span></span>Learn More</button>
+                        </a>
+                    </div>
+                    <div>
+                        <i class="bx bxl-python" style='color: #ff014f'></i>
+                        <h2>Python Programming</h2>
+                        <p>Python is a multi-paradigm programming language. It is commonly used for developing websites and software, task automation, data analysis, and data visualization.</p>
+                        <a href="https://www.geeksforgeeks.org/python-programming-language/" target="_blank">
+                            <button type="button"><span></span>Learn More</button>
+                        </a>
+                    </div>
+                    <div>
+                        <i class="bx bxl-django" style='color: #ff014f'></i>
+                        <h2>Django Framework</h2>
+                        <p>Django is a Python framework that makes it easier to create web sites using Python. It takes care of the difficult stuff so that you can concentrate on building your web applications.</p>
+                        <a href="https://www.geeksforgeeks.org/django-tutorial/" target="_blank">
+                            <button type="button"><span></span>Learn More</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="Myskills">
+            <div class="container">
+                <h1 class="sub-title">My <span>Skills</span></h1>
+                <div class="skills-list">
+                    <section>
+                        <h1 class="heading1">Technical Skills</h1>
+                        <div class="Technical-bars">
+                            <div class="bar">
+                                <i style="color: #c95d2e" class="bx bxl-html5"></i>
+                                <div class="info">
+                                    <span>HTML</span>
+                                </div>
+                                <div class="progress-line html">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <i style="color: #147bbc" class="bx bxl-css3"></i>
+                                <div class="info">
+                                    <span>CSS</span>
+                                </div>
+                                <div class="progress-line css">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <i style="color: #c32ec9" class="bx bxl-python"></i>
+                                <div class="info">
+                                    <span>Python</span>
+                                </div>
+                                <div class="progress-line python">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <i style="color: #b0bc1e" class="bx bxl-django"></i>
+                                <div class="info">
+                                    <span>Django</span>
+                                </div>
+                                <div class="progress-line django">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                
+                    <section>
+                        <div>  
+                            <h1 class="heading1">Professional Skills</h1>
+                            <div class="radial-bars">
+                                <div class="radial-bar">
+                                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                                    </svg>
+                                    <div class="percentage">90%</div>
+                                    <div class="text1">Creativity</div>
+                                </div>
+                                <div class="radial-bar">
+                                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                        <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                                    </svg>
+                                    <div class="percentage">80%</div>
+                                    <div class="text1">Communication</div>
+                                </div>
+                                <div class="radial-bar">
+                                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                                    </svg>
+                                    <div class="percentage">50%</div>
+                                    <div class="text1">Problem Solving</div>
+                                </div>
+                                <div class="radial-bar">
+                                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                        <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                                    </svg>
+                                    <div class="percentage">70%</div>
+                                    <div class="text1">Team Work</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                </div>
+            </div>
+        </section>
+    
+        <section>
+            <div id="portfolio" id="project">
+                <div class="main-text" id="project">
+
+                    <h2>Latest <span>Project</span></h2>
+    
+                    <div class="portfolio-content">
+                    <div class="row">
+                        <img src="doctorji.jpg">
+                        <div class="layer">
+                            <h5> Nearest doctor predictor</h5>
+                            <p>A website that takes minimum of 4 symptoms from user (three common and one distinct) and gives the name of nearest doctor available for checkup.</p>
+                            <a href="https://gist.github.com/Yatharth-Pachkhede/a85a098cc7786e6ac235543c97b5b8a3" target="_blank"><i class="bx bx-link-external" style="color: aliceblue"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="uncleji.jpg">
+                        <div class="layer">
+                            <h5> Knock@Door</h5>
+                            <p>A python app for implementation to help the local vendors to connect with the customers using Websocket and MySQL. vendors can send the notification to the customers of a particular locality and customers can also respond accordingly</p>
+                            <a href="https://github.com/Shourya-912/knock-door-App" target="_blank"><i class="bx bx-link-external" style="color: aliceblue"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="tt1.webp">
+                        <div class="layer">
+                            <h5> Timetable Management</h5>
+                            <p>This project is used to create the timetable for schools or colleges. Also all CRUD operations are performed in it</p>
+                            <a href="https://github.com/Shourya-912/timetable-management" target="_blank"><i class="bx bx-link-external" style="color: aliceblue"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>        
+        </section>
+    
+    
+        <section class="contact" id="contact">
+            <div class="contact-text">
+                <h2>Contact <span>Me</span></h2>
+                <p>I'm available for freelance work or to simply chat about web development trends and opportunities. Don't hesitate to reach out, and I'll get back to you as soon as possible. Your feedback and inquiries are greatly appreciated, and I look forward to connecting with you.
+                </br></br>Let's make the web a better place together! </p>
+                <div class="contact-list">
+                    <li><i class="bx bxs-send"></i>shourchourasia@gmail.com</li>
+                    <li><i class="bx bxs-phone"></i>9305300206</li>
+                </div>
+                <div class="contact-icons">
+                    <a href="#" target="_blank" style="--i:12"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com/its_shourya09/?hl=en" target="_blank" style="--i:13"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.linkedin.com/in/shourya-chourasia-1b428622b/" target="_blank" style="--i:14"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+    
+            <div class="contact-form">
+                <form action="">
+                    <input type="" placeholder="enter your name" required>
+                    <input type="email" placeholder="enter your email address" required>
+                    <input type="" placeholder="enter your subject">
+                    <textarea name="" id="" cols="40" rows="10" placeholder="enter your message" required>  
+                    </textarea>
+                    <input type="submit" value="submit" class="send"> 
+                </form>
+    
+            </div>
+        </section>
+        <div class="last-text">
+            <footer>
+                <p>© Developed by Shourya Chourasia</p>                
+            </footer>
+        </div>
+        <a href="#" class="top"><i class="bx-bx-up-arrow-alt"></i></a>
+
+        <script>
+            var typed = new Typed(".text", {
+                strings: ['web Developer', 'Python Programmer', 'Enthusiastic Learner'],
+                typeSpeed: 100,
+                backSpeed: 100,
+                backDelay: 1000,
+                loop: true,
+            });
+        </script>
+
     </body>
 </html>
