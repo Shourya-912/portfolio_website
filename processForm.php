@@ -8,10 +8,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST["message"];
 
     // the form data processed
-    $to = "your@email.com";
+    $to = "shourchourasia.912@gmail.com";
     $headers = "From: $email";
 
-    mail($to, $subject, $message, $headers);
+    mail($to, $name, $subject, $message, $headers);
 
     // feedback message to be displayed.
     $feedback = "Thank you! Your message has been sent.";
