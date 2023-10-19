@@ -511,6 +511,12 @@ button:hover{
     }
 }
 
+@media screen and (max-width: 768px) {
+    .radial-bar {
+        width: 45%; 
+    }
+}
+
 .radial-bars{
     width: 100%;
     display:flex;
@@ -518,11 +524,12 @@ button:hover{
     justify-content: space-around;
     align-items: flex-start;
 }
-.radial-bars .radial-bar{
+.radial-bar{
     width: 10px;
     height: 170px;
     margin-bottom: 10px;
     position: relative;
+    flex:1;
 }
 .radial-bars .radial-bar svg{
     position: absolute;
