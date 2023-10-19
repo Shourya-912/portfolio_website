@@ -118,7 +118,7 @@ body{
     cursor: pointer;
     position: relative;
     background:transparent;
-    margin-left: 12%;
+    margin-left: 11.5%;
     margin-top:3%;
     animation: slideTop 1s ease forwards;
     animation-delay: .7s;
@@ -133,7 +133,7 @@ body{
     text-align: center;
     margin: 30px 10px;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 23px;
     border: 2px solid #ff014f;
     background:transparent;
     color: #fff;
@@ -511,26 +511,22 @@ button:hover{
     }
 }
 
-@media screen and (max-width: 768px) {
-    .radial-bar {
-        width: 45%; 
-    }
-}
-
-.radial-bars{
+.radial-bars {
     width: 100%;
-    display:flex;
-    flex-wrap:wrap;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
 }
-.radial-bar{
+.radial-bar {
     width: 10px;
     height: 170px;
     margin-bottom: 10px;
     position: relative;
-    flex:1;
+    flex: 1; 
 }
+
+
 .radial-bars .radial-bar svg{
     position: absolute;
     top: 50%;
@@ -538,6 +534,12 @@ button:hover{
     transform: translate(-50%, -50%) rotate(-90deg);
     width: 120px;
     height: 160px;  
+}
+
+@media screen and (max-width: 768px) {
+    .radial-bar {
+        width: 45%; 
+    }
 }
 .radial-bars .radial-bar .progress-bar{
     stroke-width:10;
@@ -738,24 +740,12 @@ button:hover{
     color: #ff014f;
 }
 
-.contact-icons i{
-    cursor: pointer;
-    position: relative;
-    background:transparent;
-    margin-left: 12%;
-    margin-top:3%;
-}
-
-.contact-icons i{
-
-    justify-content: center;
-    width: 45px;
-    align-items: center;
-    padding:10px 10px;
-    text-align: center;
+.contact-icons i{   
+    width: 45px;   
+    padding:10px 10px;    
     margin: 30px 10px;
     border-radius: 60px;
-    font-size: 20px;
+    font-size: 22px;
     border: 2px solid #ff014f;
     background:transparent;
     color: #ff014f;
