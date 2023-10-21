@@ -400,12 +400,13 @@ button:hover{
     text-decoration-thickness: 5px;
     margin-bottom: 50px;
 }
+
 .bar{
     font-size: 23px;
 }
 
 .Technical-bars .bar{
-    margin-top: 40px 0;
+    margin: 40px 0;
 }
 .Technical-bars .bar:first-child{
     margin-top: 0;
@@ -435,6 +436,11 @@ button:hover{
     transform-origin: left;
 }
 
+@keyframes animate{
+    100%{
+        transform: scaleX(1);       
+    }
+}
 
 .Technical-bars .bar .progress-line span {
     height:100%;
@@ -445,11 +451,7 @@ button:hover{
     transform: scaleX(0);
     transform-origin: left; 
 }
-@keyframes animate{
-    100%{
-        transform: scaleX(1);       
-    }
-}
+
 .progress-line.html span {
     width: 90%;
 }
@@ -477,18 +479,25 @@ button:hover{
     opacity:0;
 
 }
-.progress-line .html span::after{
+.progress-line.html span::after{
     content:"90%";
 }
-.progress-line .css span::after{
+.progress-line.css span::after{
     content:"60%";
 }
-.progress-line .python span::after{
+.progress-line.python span::after{
     content:"85%";
 }
-.progress-line .django span::after{
-    content:"90%";
+.progress-line.django span::after{
+    content:"50%";
 }
+
+@keyframes showText{
+    100%{
+        opacity:1;
+    }
+}
+
 .progress-line span::before{
     content:"";
     position: absolute;
@@ -503,12 +512,6 @@ button:hover{
     animation: showText 0.5s 1.5s linear forwards;
     opacity: 0 ;
 
-}
-
-@keyframes showText{
-    100%{
-        opacity:1;
-    }
 }
 
 .radial-bars {
