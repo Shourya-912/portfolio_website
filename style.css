@@ -518,11 +518,11 @@ button:hover{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: flex-start;
 }
-.radial-bar {
-    width: 10px;
+.radial-bars .radial-bar {
+    width: 50%;
     height: 170px;
     margin-bottom: 10px;
     position: relative;
@@ -538,15 +538,15 @@ button:hover{
     width: 120px;
     height: 160px;  
 }
-
+/* 
 @media screen and (max-width: 768px) {
     .radial-bar {
         width: 45%; 
     }
-}
+} */
 .radial-bars .radial-bar .progress-bar{
     stroke-width:10;
-    stop-color:#3c3e41;
+    stroke:#3c3e41;
     fill:transparent;
     stroke-dasharray:502;
     stroke-dashoffset: 502;
@@ -578,16 +578,16 @@ button:hover{
 }
 @keyframes animate-path2{
     100%{
-        stroke-dashoffset: 175;
+        stroke-dashoffset: 100;
     }
 }
 @keyframes animate-path3{
     100%{
-        stroke-dashoffset: 125;
+        stroke-dashoffset: 250;
     }
 }@keyframes animate-path4{
     100%{
-        stroke-dashoffset: 75;
+        stroke-dashoffset: 150;
         }
 }
 .radial-bar .percentage {
@@ -601,7 +601,7 @@ button:hover{
     opacity: 0;
 }
 
-.radial-bar .text1 {
+.progress-bar .text1 {
     width: 100%;
     position: absolute;
     text-align: center;
